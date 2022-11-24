@@ -189,3 +189,159 @@
   filter: brightness(0);
   opacity: 50%;
 }
+
+/******************************/
+/*HOW IT WORKS SECTION*/
+/******************************/
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.step-img-box:before,
+.step-img-box:after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box:before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+
+.step-img-box:after {
+  width: 50%;
+  padding-bottom: 50%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+
+.step-img {
+  width: 35%;
+}
+
+.step-number {
+  color: #ddd;
+  font-size: 8.6rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/******************************/
+/*MEALS SECTION*/
+/******************************/
+.section-meals {
+  padding: 1.2rem 0 9.6rem 0;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.085);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 3.2rem;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #e67e22;
+}
+
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+.tag--vegan {
+  background-color: #a9e34b;
+}
+.tag--paleo {
+  background-color: #ffd43b;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  display: inline-block;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
